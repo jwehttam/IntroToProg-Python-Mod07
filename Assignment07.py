@@ -35,8 +35,8 @@ class Person:
     A class representing a person, with first and last name attributes.
     Validates that names contain only letters.
 
-    ChangeLog: (Who, When, What)
-    MJohnson, 11.26.2023, Created Class
+    ChangeLog:
+    - MJohnson, 11.26.2023, Created Class
     """
 
     def __init__(self, first_name: str = '', last_name: str = ''):
@@ -88,8 +88,8 @@ class Student(Person):
     A class representing a student, inheriting from Person.
     Adds a course_name attribute specific to students.
 
-    ChangeLog: (Who, When, What)
-    MJohnson, 11.26.2023, Created Class
+    ChangeLog:
+    - MJohnson, 11.26.2023, Created Class
     """
 
     def __init__(self, first_name: str = '', last_name: str = '', course_name: str = ''):
@@ -132,8 +132,8 @@ class FileProcessor:
     """
     A collection of processing layer functions that work with Json files
 
-    ChangeLog: (Who, When, What)
-    MJohnson, 11.26.2023, Created Class
+    ChangeLog:
+    - MJohnson, 11.26.2023, Created Class
     """
 
     @staticmethod
@@ -141,8 +141,8 @@ class FileProcessor:
         """
         Reads data from the 'Enrollments.json' file and loads it into a list of dictionary rows.
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
 
         :param student_data: list of dictionary rows to be filled with file data
 
@@ -166,8 +166,8 @@ class FileProcessor:
         """
         Writes data to the 'Enrollments.json' file from a list of dictionary rows.
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
 
         :param student_data: list of dictionary rows to be written to the file
 
@@ -194,16 +194,16 @@ class IO:
     """
     A collection of presentation layer functions that manage user input and output
 
-    ChangeLog: (Who, When, What)
-    MJohnson, 11.26.2023, Created Class
+    ChangeLog:
+    - MJohnson, 11.26.2023, Created Class
     """
 
     @staticmethod
     def output_error_messages(message: str, error: Exception = None):
         """ This function displays a custom error messages to the user
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
 
         :param message: string with message data to display
         :param error: Exception object with technical message to display
@@ -220,8 +220,8 @@ class IO:
         """
         This function displays the menu of choices to the user
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
 
         :return: None
         """
@@ -232,9 +232,9 @@ class IO:
         """
         This function gets a menu choice from the user and handles keyboard interrupts.
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
-        MJohnson, 11.27.2023, Added KeyboardInterrupt handling
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
+        - MJohnson, 11.27.2023, Added KeyboardInterrupt handling
 
         :return: string with the users choice or 'INTERRUPTED' if a keyboard interrupt is detected
         """
@@ -253,8 +253,8 @@ class IO:
         """
         This function displays the student and course names to the user
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
 
         :param student_data: list of dictionary rows to be displayed
 
@@ -273,9 +273,9 @@ class IO:
         This function gets the student's first name and last name, with a course name from the user
         and asks if the user wants to register another student.
 
-        ChangeLog: (Who, When, What)
-        MJohnson, 11.26.2023, Created function
-        MJohnson, 11.27.2023, Added feature to register another student
+        ChangeLog:
+        - MJohnson, 11.26.2023, Created function
+        - MJohnson, 11.27.2023, Added feature to register another student
 
         :param student_data: list of dictionary rows to be filled with input data
 
