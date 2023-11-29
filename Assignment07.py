@@ -200,7 +200,8 @@ class IO:
 
     @staticmethod
     def output_error_messages(message: str, error: Exception = None):
-        """ This function displays a custom error messages to the user
+        """
+        This function displays a custom error messages to the user
 
         ChangeLog:
         - MJohnson, 11.26.2023, Created function
