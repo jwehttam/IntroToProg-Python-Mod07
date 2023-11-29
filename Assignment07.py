@@ -314,9 +314,9 @@ class IO:
         return student_data
 
 
-#################################################################################
-# -- When the program starts, read the file data into a list of lists (table) --#
-#################################################################################
+################################################################################
+# -- When the program starts, read the file data into a list of dictionaries --#
+################################################################################
 students = FileProcessor.read_data_from_file(student_data=students)
 
 ###################
