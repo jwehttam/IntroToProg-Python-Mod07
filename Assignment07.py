@@ -23,7 +23,7 @@ FILE_NAME: str = 'Enrollments.json'
 #############
 # Variables #
 #############
-students: list = []  # a table of student data
+students: list = []  # List of dictionaries, each containing a student's data
 menu_choice: str  # Hold the choice made by the user.
 
 
@@ -201,7 +201,7 @@ class IO:
     @staticmethod
     def output_error_messages(message: str, error: Exception = None):
         """
-        This function displays a custom error messages to the user
+        This function displays custom error messages to the user, along with technical details of the exception
 
         ChangeLog:
         - MJohnson, 11.26.2023, Created function
